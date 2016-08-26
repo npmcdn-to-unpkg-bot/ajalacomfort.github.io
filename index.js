@@ -33,7 +33,6 @@ $(document).ready(function(){
 		
 			var percent = ((ui.position.left) / body_width  ) * 100;
 			var of_five = percent  / 100 * (4 * body_width);
-		console.log(of_five)
 			//adjust width of the time line space 
 		$("#timeline_space").css({width:percent + "%"});
 		
@@ -42,7 +41,32 @@ $(document).ready(function(){
 		
 	})
 	
+	///LISTEN TO CLICK OF NAV
+	
+	$("#bigNav text").on("click", function(){
+		var c = (this).getAttribute("class");
+				scroll("svg",c)
+		})
+	$("#side_navigation li").on("click",function(){
+			var c = $(this).attr("class")
+			scroll("normal",c)
+	})
+	
+	
+	//side function for the scrollign 
+	
+	function scroll(element,obj){
+		
+		var id;
+		if(obj === "homeNav"){id="#landing_page"}
+		else if(obj === "aboutNav"){ id="#about"}
+		else{id="#blog"}
+		
+				return $('html, body').animate({scrollTop:$(id).position().top}, 'slow');
+	}
 })
+
+
 
 
 /***** JQUERY FOR SVG SKILL S***/

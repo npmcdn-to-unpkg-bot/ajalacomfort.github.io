@@ -5,9 +5,9 @@
 body{width:100%;min-height:720px;margin:0;padding:0;}
 ul{list-style:none;}
 
-body > div {width:100%;height:720px;font-family:'Amatic SC', cursive;margin-top:100px;overflow:hidden;}
+body > div {width:100%;font-family:'Amatic SC', cursive;margin-top:100px;overflow:hidden;}
 
-
+#about,#landing_page{height:720px;}
 
 #temp_naviation{margin:auto;width:500px;height:500px;margin-top:110px;}
 #landing_page > div{cursor:pointer;}
@@ -17,9 +17,9 @@ body > div {width:100%;height:720px;font-family:'Amatic SC', cursive;margin-top:
 #side_navigation li{width:33%;display:inline-block;height:100%;text-align:center;font-size:2em;font-weight:bolder;}
 
 
-#timeline{height:50px;width:100%;position:absolute;margin-top:0;z-index:2;}
+#timeline{height:50px;width:100%;position:absolute;margin-top:30px;z-index:2;}
 #timeline > ul{width:100%;height:70%;padding:0;}
-#timeline > ul li{width:20%;display:inline-block;text-align:center;float:left;z-index:3;height:25px;padding-top:12.5px;}
+#timeline > ul li{width:20%;display:inline-block;text-align:center;float:left;z-index:3;height:25px;padding-top:12.5px;font-size:30px;font-weight:bolder;}
 
 #timeline_stick{width:5px;height:100px;position:absolute;background:#ff715b;border-radius:25px;}
 
@@ -50,3 +50,16 @@ text{font-family: 'Raleway', sans-serif;}
 circle{fill:none;}
 .first_skill_name{font-weight:300}
 .actual_percent{font-weight:800}
+
+
+
+/****POSTSS**/
+#blog{min-height:720px; }
+#blog > div{width:100%;}
+
+.post{width:70%;margin:auto;margin-top:500px;}
+.post .title{width:100%;text-align:center;font-size:4em;}
+.post_content{width:100%;line-spacing:25px;font-size:25px;text-align:center;color:#3d0b37;}
+.post_date, .post_author{width:50%;display:inline-block;height:50px;margin-bottom:50px;text-align:center;font-weight:bolder;font-size:20px;}
+.post_date{color:#ff715b}
+.post_author{color:#53917e}

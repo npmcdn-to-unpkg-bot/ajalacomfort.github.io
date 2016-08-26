@@ -1,0 +1,14 @@
+<svg width="500" height="500" id="bigNav">
+
+													  <g font-family="'Amatic SC', cursive" font-size="3em" fill="none" stroke-width="2">
+													  <text x="35%" y="20%" stroke="#edddd4">
+													     Home
+													  </text>
+													  <text x="35%" y="40%" stroke="#c44536">
+													     About
+													  </text>
+													   <text x="35%" y="60%" stroke="#772e25">
+													     Blog
+													  </text>
+													  </g>
+										</svg>

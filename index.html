@@ -3,6 +3,11 @@
 <head>
 	<title>Comfort Ajala </title>
 	<link rel="stylesheet" href="index.css"/>
+  <script src="react.js"></script>
+    <script src="react-dom.min.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+<script src="reactrocks.js" type="text/babel"></script>
+
 </head>
 <body>
 
@@ -12,29 +17,27 @@
 					
 							<div id="side_navigation">
 									<ul>
-										<li style="color:#edddd4">Home</li>
-										<li style="color:#c44536">About</li>
-										<li style="color:#772e25">Blog</li>
+										<li style="color:#edddd4" class="homeNav">Home</li>
+										<li style="color:#c44536" class="aboutNav">About</li>
+										<li style="color:#772e25" class="blogNav">Blog</li>
 									</ul>
 									
 							</div>
 							<div id="temp_naviation">
-							
-										<svg width="500" height="500">
+								<svg width="500" height="500" id="bigNav">
 
 													  <g font-family="'Amatic SC', cursive" font-size="3em" fill="none" stroke-width="2">
-													  <text x="35%" y="20%" stroke="#edddd4">
+													  <text x="35%" y="20%" stroke="#edddd4" class="homeNav">
 													     Home
 													  </text>
-													  <text x="35%" y="40%" stroke="#c44536">
+													  <text x="35%" y="40%" stroke="#c44536" class="aboutNav">
 													     About
 													  </text>
-													   <text x="35%" y="60%" stroke="#772e25">
+													   <text x="35%" y="60%" stroke="#772e25" class="blogNav">
 													     Blog
 													  </text>
 													  </g>
-										</svg>
-																	
+										</svg>				
 							</div>
 					
 					
@@ -214,9 +217,9 @@
 					<div id="blog"></div>
 					
 <!------ JS SCRIPTS !---->
+<script src="blogpost.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-		
 <script src="index.js"></script>
 </body>
 </html>
