@@ -1,0 +1,52 @@
+
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC';
+
+
+body{width:100%;min-height:720px;margin:0;padding:0;}
+ul{list-style:none;}
+
+body > div {width:100%;height:720px;font-family:'Amatic SC', cursive;margin-top:100px;overflow:hidden;}
+
+
+
+#temp_naviation{margin:auto;width:500px;height:500px;margin-top:110px;}
+#landing_page > div{cursor:pointer;}
+
+#side_navigation{height:100px;position:fixed;z-index:3;width:100%;top:0;display:none;}
+#side_navigation ul{height:100px;width:100%;}
+#side_navigation li{width:33%;display:inline-block;height:100%;text-align:center;font-size:2em;font-weight:bolder;}
+
+
+#timeline{height:50px;width:100%;position:absolute;margin-top:0;z-index:2;}
+#timeline > ul{width:100%;height:70%;padding:0;}
+#timeline > ul li{width:20%;display:inline-block;text-align:center;float:left;z-index:3;height:25px;padding-top:12.5px;}
+
+#timeline_stick{width:5px;height:100px;position:absolute;background:#ff715b;border-radius:25px;}
+
+#timeline_space{height:20%;width:0%;border:0.5px dashed #ff715b;background:rgba(255, 113, 91,0.5)}
+
+#about_space{width:calc(5 * 100%);height:100%;margin:0;}
+#about_space > div{width:20%;float:left;height:100%;color:black;}
+
+
+#about92 > p{font-size:2em; width:45%;height:100px;display:inline-block;}
+#about92 > img{height:45%;transform:rotate(-35deg);padding-top:5%;}
+
+#about09 > p{ width:100%;height:5%;font-size:4em;text-align:center;}
+#about09 ul{width:20%;height:90%;display:inline-block;}
+#about09 li{font-size:20px;width:100%;height:20px;margin-top:20px;}
+#about09 img{height:50%;border:10px solid black;transform:rotate(15deg);margin-left:20%;}
+
+#about12 > ul{width:100%;height:80%;margin-top:10%;}
+#about12 li{width:100%;height:10%;text-align:center;font-size:4em;margin-top:20px;}
+#about15 img{height:70%;}
+
+#about16 > div{width:20%;float:left;height:100%;}
+#about16 > div  ul{width:100%;}
+#about16 > div li{width:100%;min-height:100px;margin-top:20px;font-size:2.5em;}
+#about16 >  svg{margin-left:10%;}
+/****SVG**/
+text{font-family: 'Raleway', sans-serif;}
+circle{fill:none;}
+.first_skill_name{font-weight:300}
+.actual_percent{font-weight:800}

@@ -1,0 +1,140 @@
+<!----------------------------
+
+svg navigation list HOME ABOUT BLOG 
+
+!-->
+<svg width="500" height="500">
+
+  <g font-family="Raleway, sans-serif" font-size="3em" fill="none" stroke-width="2">
+  <text x="35%" y="20%" stroke="#edddd4">
+     Home
+  </text>
+  <text x="35%" y="40%" stroke="#c44536">
+     About
+  </text>
+   <text x="35%" y="60%" stroke="#772e25">
+     Blog
+  </text>
+  </g>
+</svg>
+<!----------------------------
+
+svg SKILLS ICONS
+!-->
+<svg width="800" height="750">
+  
+  <g id="pureJS">
+  <circle cx="125" cy="100" r="70"stroke="#c44536" />
+    <text x="90" y="100">
+      <tspan class="first_skill_name">Pure Js:</tspan>
+      <tspan  dy="20" dx="-20"  class="actual_percent">90%</tspan>
+    </text>
+
+  </g>  
+  <g id="HTML" transform="translate(200,0)">
+  <circle cx="125" cy="100" r="70" />
+    <text x="90" y="100">
+      <tspan class="first_skill_name">HTML:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">100%</tspan>
+    </text>
+
+  </g> 
+    <g id="HTML" transform="translate(400,0)">
+  <circle cx="125" cy="100" r="70" />
+    <text x="90" y="100">
+      <tspan class="first_skill_name">Jquery:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">80%</tspan>
+    </text>
+
+  </g> 
+    <g id="HTML" transform="translate(0,200)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">ReactJs:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">60%</tspan>
+    </text>
+
+  </g> 
+   <g id="HTML" transform="translate(200,200)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">Git:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">30%</tspan>
+    </text>
+
+  </g>
+   <g id="HTML" transform="translate(400,200)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">JAVA:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">40%</tspan>
+    </text>
+
+  </g>
+     <g id="HTML" transform="translate(0,400)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">German:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">70%</tspan>
+    </text>
+
+  </g>
+    <g id="HTML" transform="translate(200,400)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">English:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">100%</tspan>
+    </text>
+
+  </g>
+    <g id="HTML" transform="translate(400,400)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">Korean:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">40%</tspan>
+    </text>
+
+  </g>
+    <g id="HTML" transform="translate(200,560)">
+  <circle cx="125" cy="100" r="70"/>
+    <text x="90" y="100">
+      <tspan class="first_skill_name">SVG:</tspan>
+      <tspan dy="20" dx="-20" class="actual_percent">50%</tspan>
+    </text>
+
+  </g>
+  
+</svg>
+
+<!--------------------- JQUERY FOR SKILLS 
+
+$(document).ready(function(){
+  var percents = [50,80,90,60,30,40,70,100,40,50],calc = 2 * 3.14 * 70;
+  var colors = ["#197278","#283d3b","#283d3b","#edddd4","#fcba04","#3d0b37","#f45b69","#ff84e8","#2274a5","#d1603d"]
+  var circle_list = $("circle").toArray();
+  //DESIGN THE SKILL SETS 
+  function updatePercent(val){
+    $(circle_list[val]).css({
+      "stroke-dasharray": ((percents[val] / 100) * calc) + "," + calc,
+      stroke:colors[val],
+      "stroke-width":3
+    })
+    val++;
+    return val > percents.length - 1 ? true : updatePercent(val);
+  }
+  
+  //CALLING FUNCTIONS 
+  updatePercent(0)
+  
+
+})
+
+//CSSS
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700';
+*{margin:0;padding:0;}
+
+text{font-family: 'Raleway', sans-serif;}
+circle{fill:none;}
+.first_skill_name{font-weight:300}
+.actual_percent{font-weight:800}
+!--->
