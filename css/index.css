@@ -63,3 +63,7 @@ circle{fill:none;}
 .post_date, .post_author{width:50%;display:inline-block;height:50px;margin-bottom:50px;text-align:center;font-weight:bolder;font-size:20px;}
 .post_date{color:#ff715b}
 .post_author{color:#53917e}
+.post_image{width:60%;margin-left:20%;transform:rotate(180deg)}
+h4{text-align:center;}
+.embeddedVideos{}
+.post_image_group > p , .embeddedVideos  p{ font-size:25px;text-align:center;letter-spacing:5px;font-weight:800;}
