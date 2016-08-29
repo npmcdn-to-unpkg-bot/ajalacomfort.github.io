@@ -67,3 +67,11 @@ circle{fill:none;}
 h4{text-align:center;}
 .embeddedVideos{}
 .post_image_group > p , .embeddedVideos  p{ font-size:25px;text-align:center;letter-spacing:5px;font-weight:800;}
+
+#socials{width:100px;min-height:50px;position:fixed;top:25%;right:0;}
+#socials  li{width:100px;height:50px;}
+#socials  li:nth-child(1){background:#1abc9c;}
+#socials  li:nth-child(2){background:#34495e;}
+#socials  li:nth-child(3){background:#c0392b;}
+#socials li > i{width:50%;height:100%;text-align:center;color:white;}
+#socials a{color:white;text-decoration:none;width:100%;height:100%;padding-left:25%;padding-top:25%;}
